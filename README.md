@@ -4,6 +4,12 @@ Dataset definitions and parsing code for [investigraph etl](https://github.com/i
 
 This repository only holds the dataset specific metadata & code to be used as a [Block](https://docs.prefect.io/2.10.11/concepts/blocks/) within a prefect.io deployment.
 
+## datasets
+
+- [European Commission - Meetings with interest representatives](https://data.europa.eu/data/datasets/european-commission-meetings-with-interest-representatives?locale=en)
+- [Global Database of Humanitarian Organisations](https://www.humanitarianoutcomes.org/projects/gdho)
+- [EU Authorities from asktheeu.org](https://www.asktheeu.org/en/help/api)
+
 
 ## supported by
 [Media Tech Lab Bayern batch #3](https://github.com/media-tech-lab)
