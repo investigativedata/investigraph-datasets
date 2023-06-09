@@ -34,6 +34,7 @@ jobs:
         run: "investigraph run ${{ matrix.dataset }}"
 
   catalog:
+    needs: data
     runs-on: ubuntu-latest
     container: ghcr.io/investigativedata/investigraph-datasets:main
     env:
