@@ -4,6 +4,12 @@ Dataset definitions and parsing code for [investigraph etl](https://github.com/i
 
 This repository only holds the dataset specific metadata & code to be used as a [Block](https://docs.prefect.io/2.10.11/concepts/blocks/) within a prefect.io deployment.
 
+## add as block
+
+    investigraph add-block -b github/investigraph-datasets -u https://github.com/investigativedata/investigraph-datasets
+
+For more info refer to the [investigraph tutorial](https://investigativedata.github.io/investigraph/tutorial/)
+
 ## datasets
 
 - [European Commission - Meetings with interest representatives](https://data.europa.eu/data/datasets/european-commission-meetings-with-interest-representatives?locale=en)
