@@ -1,0 +1,4 @@
+datasets:
+  - include: https://data.ftm.store/investigraph/ec_meetings/index.json
+  - include: https://data.ftm.store/investigraph/eu_authorities/index.json
+  - include: https://data.ftm.store/investigraph/gdho/index.json
