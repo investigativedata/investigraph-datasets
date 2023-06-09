@@ -22,12 +22,19 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    strategy:
+      matrix:
+        dataset:
+          - ec_meetings
+          - eu_authorities
+          - gdho
     steps:
-      - name: ec_meetings
-        run: "investigraph run ec_meetings"
-      - name: gdho
-        run: "investigraph run gdho"
-      - name: eu_authorities
-        run: "investigraph run eu_authorities"
+      - name: parse and write the dataset
+        run: "investigraph run ${{ dataset }}"
+
+  catalog:
+    runs-on: ubuntu-latest
+    container: ghcr.io/investigativedata/investigraph-datasets:main
+    steps:
       - name: Update the catalog
         run: "investigraph build-catalog /data/catalog.yml -o s3://s3.investigativedata.org@data.ftm.store/investigraph/catalog.json"
