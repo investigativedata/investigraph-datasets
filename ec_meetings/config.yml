@@ -13,7 +13,7 @@ summary: |
   mandatory Transparency Register.
 resources:
   - name: entities.ftm.json
-    url: https://data.ftm.store/ec_meetings/entities.ftm.json
+    url: https://data.ftm.store/investigraph/ec_meetings/entities.ftm.json
     mime_type: application/json+ftm
 publisher:
   name: European Commission Secretariat-General
@@ -23,6 +23,8 @@ publisher:
     through the other EU institutions. It supports the whole Commission.
   url: https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/secretariat-general_en
 
+index_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/ec_meetings/index.json
+entities_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/ec_meetings/entities.ftm.json
 
 pipeline:
   sources:
