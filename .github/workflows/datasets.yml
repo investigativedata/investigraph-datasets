@@ -30,7 +30,7 @@ jobs:
           - gdho
     steps:
       - name: parse and write the dataset
-        run: "investigraph run ${{ dataset }}"
+        run: "investigraph run ${{ matrix.dataset }}"
 
   catalog:
     runs-on: ubuntu-latest
