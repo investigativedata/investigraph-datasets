@@ -35,6 +35,9 @@ jobs:
   catalog:
     runs-on: ubuntu-latest
     container: ghcr.io/investigativedata/investigraph-datasets:main
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - name: Update the catalog
         run: "investigraph build-catalog /data/catalog.yml -o s3://s3.investigativedata.org@data.ftm.store/investigraph/catalog.json"
