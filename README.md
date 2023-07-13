@@ -1,3 +1,6 @@
+[![datasets](https://github.com/investigativedata/investigraph-datasets/actions/workflows/datasets.yml/badge.svg)](https://github.com/investigativedata/investigraph-datasets/actions/workflows/datasets.yml)
+[![build-docker](https://github.com/investigativedata/investigraph-datasets/actions/workflows/build-docker.yml/badge.svg)](https://github.com/investigativedata/investigraph-datasets/actions/workflows/build-docker.yml)
+
 # investigraph-datasets
 
 Dataset definitions and parsing code for [investigraph etl](https://github.com/investigativedata/investigraph-etl)
