@@ -1,5 +1,10 @@
 FROM ghcr.io/investigativedata/investigraph:develop
 
+USER root
+RUN apt install -y curl
+
+USER 1000
+
 COPY ./catalog.yml /data/catalog.yml
 COPY ./gdho /data/datasets/gdho
 COPY ./eu_authorities /data/datasets/eu_authorities
