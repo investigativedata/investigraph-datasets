@@ -17,15 +17,11 @@ publisher:
     mySociety. It is not an official EU website.
   url: https://www.asktheeu.org/
 
-index_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/index.json
-entities_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/entities.ftm.json
-
-pipeline:
+extract:
   sources:
     - uri: https://www.asktheeu.org/en/body/all-authorities.csv
 
-
-mapping:
+transform:
   queries:
     - entities:
         body:
@@ -48,3 +44,8 @@ mapping:
               column: "Notes"
             sourceUrl:
               template: "https://www.asktheeu.org/en/body{{URL name}}"
+
+load:
+  index_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/index.json
+  entities_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/entities.ftm.json
+

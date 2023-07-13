@@ -31,7 +31,7 @@ jobs:
           - gdho
     steps:
       - name: parse and write the dataset
-        run: "investigraph run ${{ matrix.dataset }}"
+        run: "investigraph run -d ${{ matrix.dataset }} -b local-file-system/datasets"
 
   catalog:
     needs: data

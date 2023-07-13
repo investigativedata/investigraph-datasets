@@ -1,0 +1,7 @@
+Dockerfile
+data
+venv
+.env
+.prefect
+.git
+.github
