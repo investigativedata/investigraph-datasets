@@ -43,3 +43,5 @@ jobs:
     steps:
       - name: Update the catalog
         run: "investigraph build-catalog /data/catalog.yml -o s3://s3.investigativedata.org@data.ftm.store/investigraph/catalog.json"
+      - name: Notify success
+        run: "curl ${{ secrets.NOTIFY_HOOK }}"
