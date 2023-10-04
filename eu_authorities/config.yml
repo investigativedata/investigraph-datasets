@@ -46,6 +46,6 @@ transform:
               template: "https://www.asktheeu.org/en/body{{URL name}}"
 
 load:
-  index_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/index.json
-  entities_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/eu_authorities/entities.ftm.json
+  index_uri: s3://data.ftm.store/investigraph/eu_authorities/index.json
+  entities_uri: s3://data.ftm.store/investigraph/eu_authorities/entities.ftm.json
 

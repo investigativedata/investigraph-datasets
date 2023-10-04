@@ -59,5 +59,5 @@ transform:
                 - Religion
 
 load:
-  index_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/gdho/index.json
-  entities_uri: s3://s3.investigativedata.org@data.ftm.store/investigraph/gdho/entities.ftm.json
+  index_uri: s3://data.ftm.store/investigraph/gdho/index.json
+  entities_uri: s3://data.ftm.store/investigraph/gdho/entities.ftm.json
